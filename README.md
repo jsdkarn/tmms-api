@@ -5,7 +5,7 @@ API สำหรับเก็บบันทึกการเบิก/ยื
 ## Installation
 
 ```bash
-$ yarn install
+$ npm install
 ```
 
 ## Running the app
@@ -20,6 +20,8 @@ $ yarn run start:dev
 # production mode
 $ yarn run start:prod
 ```
+
+- [API Document](https://documenter.getpostman.com/view/5064894/UyrEivZj)
 
 ## Tools
 
