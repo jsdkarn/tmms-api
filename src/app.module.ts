@@ -4,12 +4,13 @@ import { AppService } from './app.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ToolModule } from './tool/tool.module';
 import { LogModule } from './log/log.module';
-
+import { ConfigModule } from '@nestjs/config';
 @Module({
   imports: [
+    ConfigModule.forRoot(),
     MongooseModule.forRootAsync({
       useFactory: () => ({
-        uri: 'mongodb://localhost/tmmsdb',
+        uri: `mongodb://localhost/tmmsdb`,
       }),
     }),
     ToolModule,
